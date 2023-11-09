@@ -155,12 +155,19 @@ code {
 }
 
 #header h2,
-#header h2.collections,
 #footer {
   color: #000;
   background: linear-gradient(45deg, #96F6FA, #BCFA96);
   border: none;
 }
+
+
+#header h2.collections {
+  color: #000;
+  background-color: #9697fa;
+  border: none;
+}
+
 
 #header h2,
 #header h2.collections {
@@ -1227,13 +1234,16 @@ dl.stats dt {
   content: "";
 }
 
-/*mods的逗號只會出現在收藏collection的頁面，一般使用上不太會看到這個*/
-.mods.commas li:after {
+/*mods的逗號出現在收藏collection頁面，languages的逗號出現在公告頁面*/
+.mods.commas li:after,
+.languages.commas li:after {
   content: ", ";
 }
 
 .mods.commas li:last-child:after,
-.mods.commas li:only-child:after {
+.mods.commas li:only-child:after,
+.languages.commas li:last-child:after ,
+.languages.commas li:only-child:after  {
   content: none;
 }
 
