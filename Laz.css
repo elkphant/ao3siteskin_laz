@@ -542,6 +542,10 @@ form.verbose legend,
 }
 
 /*== 瀏覽作品頁 ==*/
+h2.heading a.tag {
+  font-size: inherit;
+}
+
 form.filters dl {
   margin: 0;
 }
