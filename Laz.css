@@ -602,7 +602,7 @@ dl.stats+.landmark+.actions, .mystery .summary+.landmark+.actions {
 .blurb .header h4.heading a {
   margin: 6px;
 }
-.blurb .header h4.heading a:first-child {
+.blurb .header h4.heading a:first-of-type {
   display: block;
   font-size: 28px;
 }
@@ -907,7 +907,7 @@ dl.subscription.index.group input {
   text-wrap: wrap;
 }
 
-dl.subscription.index.group dt a:first-child {
+dl.subscription.index.group dt a:first-of-type {
   display: block;
   margin: auto;
   font-size: 20px;
@@ -938,7 +938,7 @@ dl.subscription.index.group dd {
   border-inline: 1px solid #5d6b63;
 }
 
-.related_works-index dt a:first-child {
+.related_works-index dt a:first-of-type {
   font-size: 20px;
 }
 
