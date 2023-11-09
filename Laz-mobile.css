@@ -98,10 +98,12 @@ samp,
   padding: 0;
   margin: 1em;
 }
+
 .primary.header.module ul.actions {
   float: none;
   clear: both;
 }
+
 .primary .icon {
     display: block;
     position: relative;
@@ -196,7 +198,8 @@ samp,
   font-size: 14px;
 }
 
-.blurb .header h4.heading, .blurb .header h5.fandoms.heading {
+.blurb .header h4.heading,
+.blurb .header h5.fandoms.heading {
   margin: 6px auto;
 }
 
@@ -267,7 +270,7 @@ form dl {
 }
 
 /*== 其他 ==*/
-/*心心*/
+/*心心，刪除預設底圖並改成表情符號作為前綴*/
 p.kudos {
   background: none;
   padding: 0;
@@ -309,8 +312,10 @@ dl.subscription.index.group input {
   left: 2px;
 }
 
-/*訪客頭像*/
+/*訪客頭像，有套用imageset才需要(把斜線米字米字斜線刪除)*/
+/*
 .comment .icon .visitor {
   background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -525px transparent;
   display: block;
 }
+*/
