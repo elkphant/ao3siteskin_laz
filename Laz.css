@@ -962,6 +962,15 @@ a:visited,
   border: none;
 }
 
+/*如果需要留下點擊紀錄，刪除上一段的相同文字，然後保留這個部分(把斜線米字米字斜線刪除)*/
+/*
+.listbox .heading a:visited,
+.blurb .header h4.heading a:visited {
+  color: #FA9A96;
+  border: none;
+}
+*/
+
 a:hover, 
 a:focus,
 a:link:hover,
@@ -1177,6 +1186,7 @@ dl.stats dt {
 
 
 /*== 添加小圖示 ==*/
+/*這邊的圖示是我從表情符號更改製作而來，有需要可以拿去用在其他AO3網站主題*/
 a.dropdown-toggle[href*="/works/new"] {
   background: url(https://i.ibb.co/LJmV776/image.png) no-repeat !important;
   background-size: 15px !important;
@@ -1352,11 +1362,12 @@ dd.freeform a.tag {
 }
 
 /*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤*/
+/*紅燈*/
 .commas .tag:is([href*="Top" i][href*="XXXXXX" i]) {
   color: #FA9A96;
   background: linear-gradient(45deg, #43241F, #182C35);
 }
-
+/*綠燈*/
 .commas .tag:is([href*="bottom" i][href*="XXXXXX" i]) {
   color: #bcfa96;
   background: linear-gradient(90deg, #182C35, #8E975E);
@@ -1552,12 +1563,3 @@ a.rss span {
   line-height: 14.45px;
   display: inline-block;
 }
-
-/*如果需要留下點過連結的紀錄，保留這個部分(把斜線米字刪除)*/
-/*
-.listbox .heading a:visited,
-.blurb .header h4.heading a:visited {
-  color: #FA9A96;
-  border: none;
-}
-*/
