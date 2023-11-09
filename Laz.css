@@ -7,7 +7,7 @@
 強調 → 深#2B322E 淺#5d6b63
 三元群 → (原藍)紫#CB96FA (原黃)橘#FAD396
 補色 → (原紅)粉#FA9A96
-類比色 → 反白#BCFA96 ，#96F6FA、#96FA99
+類比色 → #BCFA96、#96F6FA
 */
 
 body,
@@ -157,7 +157,7 @@ code {
 #header h2.collections,
 #footer {
   color: #000;
-  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+  background: linear-gradient(45deg, #96F6FA, #BCFA96);
   border: none;
 }
 
@@ -261,7 +261,7 @@ code {
 .splash .favorite li:nth-of-type(even) a:hover,
 .splash .favorite li:nth-of-type(even) a:focus {
   color: #000;
-  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+  background: linear-gradient(45deg, #96F6FA, #BCFA96);
 }
 
 .splash .news.index {
@@ -990,8 +990,64 @@ a:visited:focus,
 .heading .action.top a:hover, 
 .heading .action.top a:focus {
   COLOR: #000;
-  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+  background: linear-gradient(45deg, #96F6FA, #BCFA96);
   text-decoration: none;
+}
+
+/*== 標籤 ==*/
+a.tag,
+a.tag:link,
+a.tag:visited,
+.listbox .heading a.tag:visited {
+  font-size: 15px;
+  color: #97FABC;
+  background: #1c1c1c;
+  line-height: 1.1;
+  padding: 3px 6px;
+  margin: 3px 0;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+a.tag:hover,
+a.tag:focus,
+a.tag:link:hover,
+a.tag:link:focus,
+a.tag:visited:hover,
+a.tag:visited:focus,
+.listbox .heading a.tag:visited:hover,
+.listbox .heading a.tag:visited:focus {
+  COLOR: #000 !important;
+  background: linear-gradient(45deg, #96F6FA, #BCFA96) !important;
+}
+
+/*標籤個人化，關係、角色與自由標籤設置不同顏色*/
+li.relationships a.tag,
+dd.relationship a.tag {
+  color: #FAD396;
+}
+
+li.characters a.tag,
+dd.character a.tag {
+  color: #ECFEF1;
+}
+
+li.freeforms a.tag,
+dd.freeform a.tag {
+  color: #CB96FA;
+}
+
+/*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤*/
+/*紅燈*/
+.commas .tag:is([href*="Top" i][href*="XXXXXX" i]) {
+  color: #FA9A96;
+  background: linear-gradient(45deg, #43241F, #182C35);
+}
+/*綠燈*/
+.commas .tag:is([href*="bottom" i][href*="XXXXXX" i]) {
+  color: #bcfa96;
+  background: linear-gradient(45deg, #182C35, #8E975E);
 }
 
 /*== 按鈕樣式 ==*/
@@ -1317,62 +1373,6 @@ li.collection dl.stats a[href*="/requests"]::before {
   background: url(https://i.ibb.co/6HyYXXy/image.png); 
 }
 
-/*== 標籤 ==*/
-a.tag,
-a.tag:link,
-a.tag:visited,
-.listbox .heading a.tag:visited {
-  font-size: 15px;
-  color: #97FABC;
-  background: #1c1c1c;
-  line-height: 1.1;
-  padding: 3px 6px;
-  margin: 3px 0;
-  border: none;
-  border-radius: 15px;
-  display: inline-block;
-}
-
-a.tag:hover,
-a.tag:focus,
-a.tag:link:hover,
-a.tag:link:focus,
-a.tag:visited:hover,
-a.tag:visited:focus,
-.listbox .heading a.tag:visited:hover,
-.listbox .heading a.tag:visited:focus {
-  COLOR: #000 !important;
-  background: linear-gradient(-45deg, #96F6FA, #96Fa99) !important;
-}
-
-/*標籤個人化，關係、角色與自由標籤設置不同顏色*/
-li.relationships a.tag,
-dd.relationship a.tag {
-  color: #FAD396;
-}
-
-li.characters a.tag,
-dd.character a.tag {
-  color: #ECFEF1;
-}
-
-li.freeforms a.tag,
-dd.freeform a.tag {
-  color: #CB96FA;
-}
-
-/*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤*/
-/*紅燈*/
-.commas .tag:is([href*="Top" i][href*="XXXXXX" i]) {
-  color: #FA9A96;
-  background: linear-gradient(45deg, #43241F, #182C35);
-}
-/*綠燈*/
-.commas .tag:is([href*="bottom" i][href*="XXXXXX" i]) {
-  color: #bcfa96;
-  background: linear-gradient(90deg, #182C35, #8E975E);
-}
-
 /*== 其他為小的更動 other small changes ==*/
 /*點擊問號後跳出的說明*/
 #modal {
@@ -1420,7 +1420,7 @@ q::before, q::after {
 
 /*反白文字*/
 ::selection {
-  background: #BCFA96;
+  background: #97FABC;
   COLOR: #000;
 }
 
@@ -1433,7 +1433,7 @@ q::before, q::after {
 
 /*滾動條樣式*/
 ::-webkit-scrollbar-thumb{
-  background: #BCFA96;
+  background: #97FABC;
   border-radius: 8px;
 }
 
@@ -1518,7 +1518,7 @@ input#query:hover {
 
 /*標籤雲*/
 a.cloud1.tag {
-  color: #96F6FA;
+  color: #96FADD;
   background: none;
   font-size: 0.625em;
 }
