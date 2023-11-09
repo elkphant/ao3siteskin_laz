@@ -1,13 +1,13 @@
-/*
-背景 #161/616
-背景更深 #060/606
-背景淺 #1c1*c1c；#252*525；#333*333
-文字 #111→#fff
-主色 #900→#97F/ABC
-強調→深#2B3*22E 淺#5d6*b63
-三元群→(原藍)紫#CB9*6FA (原黃)橘#FAD*396
-補色→(原紅)粉#FA9*A96
-類比色→反白#BCF*A96 ，#96F*6FA、#96F*A99
+/* 使用的顏色比想像中更五彩繽紛
+背景 #161616
+背景深 #060606
+背景淺 #1c1c1c；#252525；#333333
+文字 #111 → #fff
+主色 #900 → #97FABC
+強調 → 深#2B322E 淺#5d6b63
+三元群 → (原藍)紫#CB96FA (原黃)橘#FAD396
+補色 → (原紅)粉#FA9A96
+類比色 → 反白#BCFA96 ，#96F6FA、#96FA99
 */
 
 body,
@@ -73,7 +73,9 @@ samp,
   font-family: Consolas, Monaco, Noto Mono, Courier, monospace;
 }
 
-code { padding-left: 6px; padding-right: 6px; }
+code {
+  padding-left: 6px; padding-right: 6px;
+}
 
 /*== 頁首header 與 頁尾footer ==*/
 #header a, 
@@ -223,8 +225,6 @@ code { padding-left: 6px; padding-right: 6px; }
   padding: 0px;
 }
 
-
-
 /*== 主要內容區inner ==*/
 #inner {
   width: 80%;
@@ -272,6 +272,10 @@ code { padding-left: 6px; padding-right: 6px; }
 
 .splash .news li {
   border-color: #2B322E;
+}
+
+.news dl.meta {
+  padding: 1em;
 }
 
 .own,
@@ -1092,6 +1096,7 @@ dl.meta dd ul li:first-child {
   color: #fff;
   margin: 1em auto;
 }
+
 .userstuff h3 {
   font-weight: 600;
   border-color: #2b322e;
@@ -1123,7 +1128,7 @@ dl.meta dd ul li:first-child {
   border-radius: .25em;
 }
 
-/*== 隱藏起來的東西 == /beta文字、logo圖案、user頭像、首頁訊息提示、推特限高、作品數據前綴、標籤tags逗號、書籤前綴*/
+/*== 隱藏起來的東西 ==/beta文字、logo圖案、user頭像、首頁訊息提示、推特限高、作品數據前綴、標籤tags逗號、書籤前綴*/
 #header .heading sup, 
 #header .logo, 
 #greeting .icon {
@@ -1135,6 +1140,7 @@ dl.meta dd ul li:first-child {
   display: none; 
 }
 
+/*自從推特被奇怪的人改來改去之後都顯示不出東西，但又不想刪除這個欄位所以只有限制高度，如果不想顯示可以display: none刪掉*/
 .latest.tweets iframe {
   max-height: 85px;
 }
@@ -1151,6 +1157,7 @@ dl.stats dt {
   content: "";
 }
 
+/*mods的逗號只會出現在收藏collection的頁面，一般使用上不太會看到這個*/
 .mods.commas li:after {
   content: ", ";
 }
@@ -1221,25 +1228,86 @@ li.collection dl.stats a[href*="/collections"]::before,
   margin: 0px 3px -2px 0;
 }
 
- .work.meta.group dd.language::before { background: url(https://i.ibb.co/zV6LTNF/image.png); }
-dl.stats dd.words::before, .series dl.stats dd:first-of-type:not([class])::before, .bookmark dl.stats dd:first-of-type:not([class])::before { background: url(https://i.ibb.co/HCv1bSG/image.png); }
-dl.stats dd.chapters::before, .bookmark dl.stats dd:nth-of-type(2):not([class])::before { background: url(https://i.ibb.co/7Cychr9/image.png); }
-dd.collections::before, li.collection dl.stats a[href*="/collections"]::before { background: url(https://i.ibb.co/3dx21sP/image.png); }
-dl.stats dd.comments::before { background: url(https://i.ibb.co/wNLh0GX/image.png); }
-dl.stats dd.kudos::before { background: url(https://i.ibb.co/SxrGN9t/image.png); }
-dl.stats dd.bookmarks::before, .series dl.stats dd:nth-of-type(4):not([class])::before, .bookmark dl.stats dd:nth-of-type(3):not([class])::before, li.collection dl.stats a[href*="/bookmarks"]::before { background: url(https://i.ibb.co/x8q45z7/image.png); }
-dl.stats dd.hits::before { background: url(https://i.ibb.co/VV8myx8/image.png); }
-dd.series::before, .series dl.stats dd:nth-of-type(2):not([class])::before, li.collection dl.stats a[href*="/works"]::before { background: url(https://i.ibb.co/pnhSFRC/image.png); }
-dl.stats dd.published::before { background: url(https://i.ibb.co/5smgps0/image.png); }
-dl.stats dd.status::before, .series dl.stats dd:nth-of-type(3):not([class])::before { background: url(https://i.ibb.co/NCMzpdf/image.png); }
-dl.stats dd.subscriptions::before { background: url(https://i.ibb.co/5sxHwvm/image.png); }
-li.collection dl.stats a[href*="/fandoms"]::before, .tagset dl.stats dd:first-of-type::before { background: url(https://i.ibb.co/py1xqKp/image.png); }
-li.collection dl.stats a[href*="/requests"]::before { background: url(https://i.ibb.co/KqKcLVJ/image.png); } 
-.tagset dl.stats dd:nth-of-type(2)::before { background: url(https://i.ibb.co/Hxkkmh1/image.png); }
-.tagset dl.stats dd:nth-of-type(3)::before { background: url(https://i.ibb.co/mtjwTnh/image.png); }
-.tagset dl.stats dd:last-of-type::before { background: url(https://i.ibb.co/6HyYXXy/image.png); }
+ .work.meta.group dd.language::before {
+   background: url(https://i.ibb.co/zV6LTNF/image.png);
+ }
 
-/*== 標籤個人化 ==*/
+dl.stats dd.words::before, 
+.series dl.stats dd:first-of-type:not([class])::before, 
+.bookmark dl.stats dd:first-of-type:not([class])::before {
+  background: url(https://i.ibb.co/HCv1bSG/image.png);
+}
+
+dl.stats dd.chapters::before, 
+.bookmark dl.stats dd:nth-of-type(2):not([class])::before {
+  background: url(https://i.ibb.co/7Cychr9/image.png);
+}
+
+dd.collections::before,
+li.collection dl.stats a[href*="/collections"]::before {
+  background: url(https://i.ibb.co/3dx21sP/image.png);
+}
+
+dl.stats dd.comments::before {
+  background: url(https://i.ibb.co/wNLh0GX/image.png);
+}
+
+dl.stats dd.kudos::before {
+  background: url(https://i.ibb.co/SxrGN9t/image.png);
+}
+
+dl.stats dd.bookmarks::before, 
+.series dl.stats dd:nth-of-type(4):not([class])::before, 
+.bookmark dl.stats dd:nth-of-type(3):not([class])::before, 
+li.collection dl.stats a[href*="/bookmarks"]::before {
+  background: url(https://i.ibb.co/x8q45z7/image.png);
+}
+
+dl.stats dd.hits::before {
+  background: url(https://i.ibb.co/VV8myx8/image.png);
+}
+
+dd.series::before,
+.series dl.stats dd:nth-of-type(2):not([class])::before,
+li.collection dl.stats a[href*="/works"]::before {
+  background: url(https://i.ibb.co/pnhSFRC/image.png);
+}
+
+dl.stats dd.published::before {
+  background: url(https://i.ibb.co/5smgps0/image.png);
+}
+
+dl.stats dd.status::before, 
+.series dl.stats dd:nth-of-type(3):not([class])::before {
+  background: url(https://i.ibb.co/NCMzpdf/image.png);
+}
+
+dl.stats dd.subscriptions::before {
+  background: url(https://i.ibb.co/5sxHwvm/image.png);
+}
+
+li.collection dl.stats a[href*="/fandoms"]::before, 
+.tagset dl.stats dd:first-of-type::before { 
+  background: url(https://i.ibb.co/py1xqKp/image.png); 
+}
+
+li.collection dl.stats a[href*="/requests"]::before {
+  background: url(https://i.ibb.co/KqKcLVJ/image.png);
+}
+
+.tagset dl.stats dd:nth-of-type(2)::before { 
+  background: url(https://i.ibb.co/Hxkkmh1/image.png);
+}
+
+.tagset dl.stats dd:nth-of-type(3)::before { 
+  background: url(https://i.ibb.co/mtjwTnh/image.png);
+}
+
+.tagset dl.stats dd:last-of-type::before {
+  background: url(https://i.ibb.co/6HyYXXy/image.png); 
+}
+
+/*== 標籤 ==*/
 a.tag,
 a.tag:link,
 a.tag:visited,
@@ -1267,8 +1335,7 @@ a.tag:visited:focus,
   background: linear-gradient(-45deg, #96F6FA, #96Fa99) !important;
 }
 
-/*主綠#97FABC 橘#FAD396 紫#CB96FA 紅#FA9A96 
-#BCFA96、#96F6FA、#96FA99*/
+/*標籤個人化，關係、角色與自由標籤設置不同顏色*/
 li.relationships a.tag,
 dd.relationship a.tag {
   color: #FAD396;
@@ -1284,19 +1351,19 @@ dd.freeform a.tag {
   color: #CB96FA;
 }
 
-.commas .tag:is([href*="Top" i][href*="Zoro" i]) {
+/*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤*/
+.commas .tag:is([href*="Top" i][href*="XXXXXX" i]) {
   color: #FA9A96;
   background: linear-gradient(45deg, #43241F, #182C35);
 }
 
-.commas .tag:is([href*="bottom" i][href*="zoro" i]),
-.commas .tag[href*="%E7%B4%A2%E5%8F%97"] {
+.commas .tag:is([href*="bottom" i][href*="XXXXXX" i]) {
   color: #bcfa96;
   background: linear-gradient(90deg, #182C35, #8E975E);
 }
 
-/*== 其他other small changes ==*/
-/*問號跳出說明*/
+/*== 其他為小的更動 other small changes ==*/
+/*點擊問號後跳出的說明*/
 #modal {
   background: #161616;
   color: #fff;
@@ -1311,6 +1378,7 @@ span.question {
   box-shadow: none;
   vertical-align: 0;
 }
+
 span.symbol span {
   padding: .25em .425em;
 }
@@ -1319,6 +1387,7 @@ span.symbol span {
 li::marker {
   color: #97fabc;
 }
+
 ul.notes li::marker,
 .error li::marker {
   color: #000;
@@ -1328,11 +1397,12 @@ ul.notes li::marker,
 .userstuff blockquote {
   border-inline-start: 2px solid #97FABC;
 }
+
 q::before, q::after {
   color: #97fabc;
 }
 
-/*預設分隔線*/
+/*預設分隔線，加高了底下的邊距*/
 .userstuff hr {
   margin: .875em auto 1.75em;
 }
@@ -1349,6 +1419,7 @@ q::before, q::after {
   height: 8px;
   background: #333333;
 }
+
 /*滾動條樣式*/
 ::-webkit-scrollbar-thumb{
   background: #BCFA96;
@@ -1356,7 +1427,8 @@ q::before, q::after {
 }
 
 /*章節與下載選單*/
-.chapter .secondary, .download .secondary {
+.chapter .secondary,
+.download .secondary {
   top: initial;
   right: 0;
   margin: 2.5em;
@@ -1365,6 +1437,7 @@ q::before, q::after {
   border-radius: .25em;
   box-shadow: none;
 }
+
 .chapter .secondary form p {
   padding: 0;
 }
@@ -1382,24 +1455,28 @@ li.search fieldset {
   border: none;
   font-size: inherit;
 }
+
 input#query {
     color: #fff;
     border-color: #2b322e;
 }
+
 form.search input[type="text"] {
     color: #fff;
     border-color: #1c1c1c;
 }
+
 input#query:hover {
     color: #97fabc;
     border-color: #97fabc;
 }
 
-/*tag sets*/
+/*標籤組tag sets，基本上只有我這種到處點來點去的使用者才會找到的頁面*/
 .tagset.home .index.group span.action a[role="button"]{
   background: none;
   border: none;
 }
+
 .tagset.home .index.group span.action a[role="button"]:hover {
   color: #97fabc;
 }
@@ -1476,22 +1553,7 @@ a.rss span {
   display: inline-block;
 }
 
-.news dl.meta {
-  padding: 1em;
-}
-
-/*== 個人化 ==*/
-/*
-dl.stats,
-dd.language,
-.datetime,
-.splash .news .meta {
-  font-family: "Iansui", "LXGW WenKai TC";
-}
-*/
-
-
-/*如果需要留下點擊過連結的紀錄，保留這個部分(把斜線米字刪除)*/
+/*如果需要留下點過連結的紀錄，保留這個部分(把斜線米字刪除)*/
 /*
 .listbox .heading a:visited,
 .blurb .header h4.heading a:visited {
