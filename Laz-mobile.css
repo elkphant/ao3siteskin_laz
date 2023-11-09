@@ -1,0 +1,316 @@
+/*== 字型 ==*/
+kbd,
+tt,
+code,
+var,
+pre,
+samp,
+.datetime,
+.splash .news .meta {
+  font-family: Monaco, Noto Mono, Courier, monospace;
+}
+ 
+/*== 頁首header 與 頁尾footer ==*/
+#header {
+  font-size: 1em;
+}
+
+#header .heading,
+#login,
+#greeting,
+#header .primary {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+
+#header .primary a.dropdown-toggle {
+  padding: 0.25em 0.75em;
+}
+
+#header .dropdown .menu a,
+#header .dropdown .menu .current {
+  white-space: nowrap;
+}
+
+#header .search {
+  display: block;
+  float: none;
+}
+
+#header .user {
+  display: inline-block;
+  float: none;
+  text-align: center;
+}
+
+#header .primary li.dropdown {
+  display: inline;
+  float: none;
+}
+
+#header .primary {
+  padding-top: 0;
+}
+
+#header .dropdown-menu li {
+    font-size: 16px;
+}
+
+#footer {
+  margin-top: 3em;
+}
+
+#footer ul {
+  margin: 0;
+}
+
+#footer .module {
+  max-width: 48%;
+}
+
+
+/*== 頁中 主要區域 ==*/
+#inner {
+  width: auto;
+}
+
+#main.dashboard {
+  padding: 0;
+  margin: auto 0;
+}
+
+/*頁面標題*/
+#main h2.heading {
+  display: block;
+  text-align: center;
+  margin: .5em auto;
+}
+
+/*頭像圖片位置*/
+.primary.header.module h2.heading, 
+.primary.header.module blockquote.userstuff, 
+.primary.header.module dl.stats,
+.primary.header.module p.type {
+  padding: 0;
+  margin: 1em;
+}
+.primary.header.module ul.actions {
+  float: none;
+  clear: both;
+}
+.primary .icon {
+    display: block;
+    position: relative;
+    float: none;
+    clear: both;
+    margin: 12px auto;
+}
+
+#dashboard {
+  margin: auto 1%;
+}
+
+/*== 瀏覽作品頁 ==*/
+.blurb .header h4.heading a:first-child {
+  font-size: 1.5em;
+}
+
+.blurb .datetime {
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  position: initial;
+  max-width: 110px;
+  text-align: center;
+}
+
+.blurb ul.required-tags {
+  position: initial;
+  top: initial;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.blurb ul.required-tags li + li + li,
+.blurb ul.required-tags li + li + li + li {
+  position: initial;
+  left: initial;
+}
+
+.blurb ul.required-tags li {
+  display: inline-flex;
+}
+
+.bookmark p.status {
+  position: relative;
+  right: initial;
+  z-index: initial;
+  display: inline-block;
+  width: 100%;
+  margin: 6px auto;
+  text-align: center;
+  line-height: 2;
+}
+
+.bookmark .status span,
+.bookmark .status a {
+  display: inline-block;
+  position: relative;
+}
+
+.bookmark .status a:focus {
+  overflow: initial;
+}
+
+.bookmark span.count {
+  text-align: center;
+  line-height: inherit;
+  position: relative;
+  top: initial;
+  left: initial;
+}
+
+.bookmark .status .public .text,
+.bookmark .status .rec .text,
+.bookmark .status .private .text {
+  font-size: 0;
+}
+
+.bookmark .status .private {
+  vertical-align: 16px; 
+  font-size: 0;
+}
+
+.bookmark .user .datetime, 
+.bookmark .short .datetime,
+.bookmark .user .status {
+  position: absolute;
+}
+
+.blurb dl.stats {
+  font-size: 14px;
+}
+
+.blurb .header h4.heading, .blurb .header h5.fandoms.heading {
+  margin: 6px auto;
+}
+
+.picture.group .header h4.heading {
+  text-align: center;
+  margin: auto 52.5px;
+}
+
+.picture.group .header .datetime {
+  position: absolute;
+  max-width: 65px;
+  text-align: right;
+}
+
+.listbox.group >.actions:last-of-type {
+  float: none;
+  clear: both;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+/*超出高度改為滾動條*/
+li.blurb .fandoms {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li.blurb .tags {
+  max-height: 22em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li.blurb .tags::-webkit-scrollbar,
+li.blurb .fandoms::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/*== 作品內文頁 ==*/
+.preface.group {
+  margin: 1.5em 1em;
+}
+
+
+/*== meta ==*/
+dl.meta dt {
+  float: left;
+}
+
+dl.meta dd .userstuff, 
+dl.meta dd .stats,
+dl.meta dd  p,
+dl.meta dd .mods {
+  clear: both;
+  padding: .25em 0;
+}
+
+.work.meta.group dd {
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+/*== 編輯頁 ==*/
+form dl {
+    margin: 0;
+}
+
+/*== 其他 ==*/
+/*心心*/
+p.kudos {
+  background: none;
+  padding: 0;
+  min-height: 0;
+  word-break: break-word;
+}
+
+p.kudos::before {
+  content: "🖤💚";
+}
+
+/*數據清單statistics*/
+.fandom.listbox .index.group dl {
+  margin: .75em auto;
+}
+
+/*訂閱清單subscriptions*/
+dl.subscription.index.group {
+  width: 90%;
+  margin: 1em auto;
+}
+
+dl.subscription.index.group input {
+  width: min-content;
+  height: 2em;
+  line-height: 1.5;
+}
+
+/*留言*/
+.comment h4.byline,
+.abbreviated .comment h4.byline {
+  padding-left: 65px;
+}
+
+.comment div.icon {
+  border: none;
+  position: absolute;
+  top: 22.5px;
+  left: 2px;
+}
+
+/*訪客頭像*/
+.comment .icon .visitor {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -525px transparent;
+  display: block;
+}

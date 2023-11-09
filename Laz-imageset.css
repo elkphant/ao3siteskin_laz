@@ -1,0 +1,143 @@
+#main.session {
+  background: url("https://i.ibb.co/HzKgJjG/Ao3logo.png") 0.5em 3em no-repeat;
+}
+
+.abbreviated .icon .anonymous {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -450px;
+}
+
+.abbreviated .icon .visitor {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -375px;
+}
+
+.skins .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -175px;
+}
+
+.admin .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 100px -75px;
+}
+
+.tag .primary .icon,
+.tagset .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -275px;
+}
+
+
+p.kudos {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -110px -580px;
+  padding: 0.5em 0.5em 0.5em 60px;
+  margin: 2em 0;
+  min-height: 50px;
+}
+
+a.rss span {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -150px -275px;
+  padding-left: 16px;
+}
+
+.required-tags .rating-general-audience {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -50px -25px;
+}
+
+.required-tags .rating-explicit {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -25px -25px;
+}
+
+.required-tags .rating-mature {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -75px -25px;
+}
+
+.required-tags .rating-notrated,
+.required-tags .category-none,
+.required-tags .warning-no,
+.status .count {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -150px 0px;
+}
+
+.required-tags .rating-teen {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -25px;
+}
+
+.required-tags .category-femslash {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -25px 0px;
+}
+
+.required-tags .category-gen {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -50px 0px;
+}
+
+.required-tags .category-slash {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px 0px;
+}
+
+.required-tags .category-het {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -75px 0px;
+}
+
+.required-tags .category-multi {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -100px -0px;
+}
+
+.required-tags .category-other {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -125px 0px;
+}
+
+.required-tags .complete-no {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -100px -25px;
+}
+
+.required-tags .complete-yes {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -175px -25px;
+}
+
+.required-tags .warning-yes {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -150px -25px;
+}
+
+.required-tags .warning-choosenotto {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -125px -25px;
+}
+
+.required-tags .external-work {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -75px -50px;
+}
+
+.status .private .text {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -175px -50px;
+}
+
+.status .public {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -125px -50px;
+}
+
+.status .hidden {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -150px -50px;
+}
+
+.status .rec {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -100px -50px;
+}
+
+.index .skins .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -580px;
+}
+
+.index .mystery .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -110px -525px;
+}
+
+.index .tag .icon,
+.index .tagset .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") -55px -580px;
+}
+
+.comment .icon .anonymous {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -635px;
+  display: block;
+}
+
+.comment .icon .visitor {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -75px;
+  display: block;
+}

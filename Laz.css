@@ -1,0 +1,1501 @@
+/*
+背景 #161/616
+背景更深 #060/606
+背景淺 #1c1*c1c；#252*525；#333*333
+文字 #111→#fff
+主色 #900→#97F/ABC
+強調→深#2B3*22E 淺#5d6*b63
+三元群→(原藍)紫#CB9*6FA (原黃)橘#FAD*396
+補色→(原紅)粉#FA9*A96
+類比色→反白#BCF*A96 ，#96F*6FA、#96F*A99
+*/
+
+body,
+.javascript,
+#outer {
+  color: #fff;
+  background: #161616;
+}
+
+/*== fonts 字型 ==*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+form.verbose legend,
+.verbose form legend {
+  font-family: Lora, Palatino Linotype, Bookman Old Style, "Book Antiqua", "Noto Serif CJK TC", Georgia, serif;
+  font-weight: 600;
+  word-wrap: break-word;
+  line-height: 1.25;
+}
+
+body,
+.toggled form,
+.dynamic form,
+.secondary,
+.dropdown,
+blockquote,
+input,
+textarea,
+button,
+.heading .actions,
+.heading .action,
+.heading span.actions,
+span.unread,
+.replied,
+span.claimed,
+.actions span.defaulted,
+.bookmark .user .meta,
+.filters dt, 
+.filters dd, 
+.filters input[type=submit], 
+.filters .expander, 
+a.work, 
+span.symbol, 
+select, #stat_chart svg text,
+dl.stats,
+dd.language {
+  font-family: Sarabun, Leelawadee UI, "Iansui", "LXGW WenKai TC", "Noto Sans TC", "Noto Sans CJK TC", 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+}
+
+kbd,
+tt,
+code,
+var,
+pre,
+samp,
+.datetime,
+.splash .news .meta {
+  font-family: Consolas, Monaco, Noto Mono, Courier, monospace;
+}
+
+code { padding-left: 6px; padding-right: 6px; }
+
+/*== 頁首header 與 頁尾footer ==*/
+#header a, 
+#header a:visited,
+#header .heading a,
+#header .primary a,
+#header .primary .open a, 
+#header .primary .menu a,
+#header .primary .dropdown:hover a, 
+#header .primary .dropdown a:focus,
+#header .user a:hover,
+#header .user a:focus,
+#header .user .open a:focus  {
+  color: #97FABC;
+}
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a,
+#login .open a:hover,
+#login .open a:focus {
+  background: #060606;
+}
+
+#header .open .menu, 
+#header .dropdown:hover .menu{
+  border-radius: .25em;
+  background: #060606;
+  box-shadow: none;
+}
+
+#header .menu, #small_login {
+  background: #161616;
+  background-image: none;
+  box-shadow: none;
+}
+
+#header .menu li,
+#header .primary {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+#header .dropdown-menu li {
+  border-bottom: 1px solid #2B322E;
+}
+
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus {
+  color: #fff;
+  background: #2B322E;
+}
+
+#header #search .text,
+#header #search .button {
+  border: none;
+  max-width: 100px;
+}
+
+#header #search input:focus {
+  color: #fff;
+  outline: none;
+  max-width: 120px;
+}
+
+.search [role=tooltip]{
+  color: #fff;
+  background: #161616;
+  border: 1px solid #97FABC;
+}
+
+#header  {
+  background: linear-gradient(45deg, #5D6B63, #060606);
+}
+
+#header h2,
+#header h2.collections,
+#footer {
+  color: #000;
+  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+  border: none;
+}
+
+#header h2,
+#header h2.collections {
+  font-weight: bolder;
+}
+
+#footer .module {
+  padding: 0 1%;
+  max-width: 23%;
+}
+
+#footer a,
+#footer .heading,
+#footer li {
+  COLOR: #000;
+}
+
+#footer a:hover {
+  color: #97fabc;
+  background: linear-gradient(45deg, #5D6B63, #060606);
+}
+
+/*頁首佈局*/
+#header .heading {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 0;
+  margin-left: 0.5em;
+}
+
+#login,
+#greeting {
+  float: right;
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+#header .primary {
+  position: relative;
+  display: block;
+  float: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#header li {
+  display: inline-block;
+  position: relative;
+}
+
+#header input,
+#header #search > *,
+#header #search .submit {
+  display: inline;
+  float: none;
+  vertical-align: middle;
+}
+
+#header .user {
+  padding: 0px;
+}
+
+
+
+/*== 主要內容區inner ==*/
+#inner {
+  width: 80%;
+  margin: auto;
+}
+
+/*== 首頁home ==*/
+.splash .module h3 {
+  color: #97FABC;
+  border: none;
+}
+
+.splash .module h4 {
+  font-size: 20px;
+}
+
+.splash .favorite a.tag {
+  display: block;
+  line-height: 2;
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+  color: #FAD396;
+  background: #060606;
+}
+
+.splash .favorite li:nth-of-type(even) a {
+  color: #CB96FA;
+  background: #060606;
+}
+
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite li:nth-of-type(odd) a:focus,
+.splash .favorite li:nth-of-type(even) a:hover,
+.splash .favorite li:nth-of-type(even) a:focus {
+  color: #000;
+  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+}
+
+.splash .news.index {
+  background: #060606;
+  border-radius: .25em;
+  padding: 0 .5em;
+}
+
+.splash .news li {
+  border-color: #2B322E;
+}
+
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed,
+.comment h4.byline {
+  background: none;
+}
+
+/*== 儀錶板dashboard ==*/
+#dashboard,
+#dashboard.own {
+  border: none;
+  background: none;
+}
+
+#dashboard a,
+#dashboard span{
+  color: #fff;
+}
+
+#dashboard .secondary {
+  background: #2B322E;
+  box-shadow: none;
+  border: none;
+}
+
+#dashboard a:hover {
+  background: #97FABC;
+  COLOR: #000;
+}
+
+#dashboard .current {
+  color: #fff;
+  background: #2B322E;
+}
+
+#dashboard ul {
+  border-color: #2B322E;
+}
+
+/*== 用戶中心user home ==*/
+.blurb h4 a:link,
+.blurb h4 img {
+  color: #97FABC;
+}
+
+ .fandom.listbox.group {
+  background: #060606;
+ }
+
+.home .header h2 {
+  margin-right: 6px;
+  margin-top: auto;
+  padding-top: 0.5em;
+  border: none;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: none;
+  box-shadow: none;
+  border: 1px solid #161616;
+  border-radius: .25em;
+}
+
+.listbox>.heading {
+  color: #fff;
+  padding: .5em;
+  background: #5D6B63;
+  border-radius: 0 0 .75em 0;
+}
+
+.listbox.fandom h5.heading {
+    line-height: 2;
+}
+
+.listbox .index {
+  background: none;
+  box-shadow: none;
+}
+
+.fandom.listbox .index.group, 
+.listbox li.blurb {
+  background: #060606;
+  border: none;
+  border-radius: .25em;
+}
+
+.bookmark .count a {
+  color: #2b322e;
+}
+
+.bookmark div.user,
+.bookmark div.recent {
+  border: none;
+  border-radius: .25em;
+  background: #0E0E0E;
+}
+
+.bookmark .user {
+  border: none;
+  border-radius: .25em;
+  background: #060606;
+}
+
+.bookmark .actions {
+  padding: 0;
+}
+
+.bookmark .recent .index {
+  width: auto;
+}
+
+/*== 個人檔案profile ==*/
+.wrapper {
+  box-shadow: none;
+}
+
+dl.meta,
+li.blurb,
+.blurb .blurb {
+  border: none;
+  border-radius: .25em;
+  background: #060606;
+}
+
+.picture .header {
+  border: none;
+}
+
+.dashboard .own, 
+.comment span.unreviewed {
+  background: #060606;
+}
+
+.notice, 
+.comment_notice, 
+.kudos_notice, 
+ul.notes {
+  color: #000;
+  background: #CB96FA;
+  box-shadow: none;
+  border: none;
+}
+
+form .notice,
+form ul.notes,
+.caution {
+  color: #000;
+  background: #FAD396;
+  box-shadow: none;
+  border: none;
+}
+
+.required {
+  color: #FA9A96;
+}
+.required.notice,
+.alert.flash,
+.error,
+.comment_error,
+.kudos_error,
+.LV_invalid {
+  color: #000;
+  background: #FA9A96;
+  box-shadow: none;
+  border: none;
+}
+
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active, 
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+  border-color: #FA9A96;
+}
+
+/*== 編輯頁 ==*/
+fieldset, 
+form dl, 
+fieldset dl dl, 
+fieldset fieldset fieldset, 
+fieldset fieldset dl dl, 
+dd.hideme, 
+form blockquote.userstuff,
+fieldset fieldset, 
+fieldset dl dl {
+  background: #060606;
+  box-shadow: none;
+  border-radius: .25em;
+  border-color: #060606;
+}
+
+.post .required .warnings, 
+dd.required, 
+form dd.required {
+  color: #97fabc;
+}
+
+.fandom.required .autocomplete {
+  color: #fff;
+  background: none;
+}
+
+dd#managePublicationDate{
+  width: auto;
+}
+
+input[type=radio], 
+input[type=checkbox], 
+input[type=file], 
+input.number, 
+p input, 
+p select, 
+.heading select, 
+li select, 
+select,
+input, 
+textarea,
+input:focus, 
+select:focus, 
+textarea:focus {
+  color: #fff;
+  background: #1c1c1c;
+  box-shadow: none;
+  border-radius: .25em;
+  border-color: #1c1c1c;
+  font-size: inherit;
+}
+
+.autocomplete li.added, 
+.post .meta dd ul li.added {
+  line-height: 1.5;
+}
+
+form.verbose legend,
+.verbose form legend {
+  color: #fff;
+  background: #2B322E;
+  box-shadow: none;
+  border-radius: .25em;
+  border-color: #2B322E;
+}
+
+.ui-sortable li {
+  background: #060606;
+  border-radius: .25em;
+  border: 2px solid #060606;
+  box-shadow: none;
+}
+.ui-sortable li:hover {
+  background: #252525;
+  border-color: #252525;
+  box-shadow: none;
+}
+.ui-sortable li span {
+  margin-left: .5em;
+}
+
+/*== 瀏覽作品頁 ==*/
+form.filters dl {
+  margin: 0;
+}
+
+#main.dashboard {
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+.blurb blockquote {
+  text-align: left;
+}
+
+.blurb dl.stats dd.chapters a {
+  border-radius: .25em;
+  background: #2b322e;
+  padding: 4px;
+  margin-left: 2px;
+}
+
+.blurb dl.stats dd.chapters a:hover,
+.blurb dl.stats dd.chapters a:focus {
+  background: #97FABC;
+}
+
+.blurb dl.stats {
+  line-height: 2;
+}
+
+dl.stats+.landmark+.actions, .mystery .summary+.landmark+.actions {
+  clear: both;
+}
+
+/*改變佈局*/
+.blurb .datetime {
+  text-align: right;
+  max-width: 60px;
+  font-size: 14px;
+}
+
+.blurb .header h4.heading, 
+.blurb .header h5.fandoms.heading {
+  margin: auto 54px;
+  text-align: center;
+  font-size: initial;
+}
+.blurb .header h4.heading a {
+  margin: 6px;
+}
+.blurb .header h4.heading a:first-child {
+  display: block;
+  font-size: 28px;
+}
+
+.blurb .header h5.fandoms.heading a.tag, 
+.bookmark h5.byline.heading a {
+  font-size: 16px;
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+.bookmark .user .datetime, 
+.bookmark .work .datetime {
+  max-width: 110px;
+}
+
+.bookmark .user .byline {
+  margin-right: 100px;
+}
+
+/*== 使用者輸入文字大小==*/
+.userstuff,
+textarea,
+textarea:focus {
+  font-size: initial;
+}
+
+/*== 篩選器filter ==*/
+.dashboard fieldset {
+  margin: 0;
+  padding: .5em;
+  border: none;
+}
+
+.dashboard fieldset select {
+  padding: 0;
+}
+
+form dt,
+.filters .group dt.bookmarker {
+  border-color: #2B322E;
+}
+
+.autocomplete.dropdown,
+.autocomplete input, 
+.autocomplete input:focus-visible, 
+.autocomplete .dropdown ul li, 
+.autocomplete div.dropdown ul {
+  color: #fff;
+  background: #1c1c1c;
+  box-shadow: none;
+  border-radius: .25em;
+  border-color: #1c1c1c;
+}
+
+.autocomplete .dropdown ul li:hover, 
+.autocomplete .dropdown li.selected {
+  background: #2B322E;
+}
+
+.required .autocomplete, 
+.autocomplete .notice {
+  color: #000;
+  background: #CB96FA;
+  border-radius: .25em;
+  margin: 0;
+}
+
+
+.filters .expander,
+.filters .expanded .expander {
+  color: #fff;
+  padding: 0;
+  background: none;
+}
+
+.filters .expander::before {
+  content: "→";
+}
+
+.filters .expanded .expander::before {
+  content: "↘";
+}
+
+#ui-datepicker-div {
+  background: #060606;
+  border-radius: .25em;
+  box-shadow: none;
+}
+
+.ui-datepicker table,
+.ui-datepicker tr:hover,
+.ui-datepicker td:hover {
+  background: #161616;
+}
+
+/*== 篩選器勾選框 ==*/
+.filters [type=radio] + .indicator:before,
+.filters [type=radio]:checked + .indicator:before,
+.filters [type=checkbox] + .indicator:before,
+.filters .exclude [type=checkbox] + .indicator:before,
+.filters [type=checkbox]:checked + .indicator:before,
+.filters .exclude [type=checkbox]:checked + .indicator:before,
+input[type=checkbox],
+input[type=radio],
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked,
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+}
+
+.filters [type=radio] + .indicator:before {
+  content: "";
+  vertical-align: -0.025em;
+  background: #333333;
+  border: none;
+}
+
+.filters [type=radio]:checked + .indicator:before {
+  content: "";
+  vertical-align: -0.025em;
+  background: #97FABC;
+  border: none;
+}
+
+.filters [type=checkbox] + .indicator:before,
+.filters .exclude [type=checkbox] + .indicator:before {
+  content: "";
+  padding: 0;
+  border-radius: 0;
+  vertical-align: -0.025em;
+  background: #333333;
+  border: none;
+}
+
+.filters [type=checkbox]:checked + .indicator:before,
+.filters .exclude [type=checkbox]:checked + .indicator:before {
+  content: "";
+  padding: 0;
+  border-radius: 0;
+  vertical-align: -0.025em;
+  background: #97FABC;
+  border: none;
+}
+
+.filters .exclude [type=checkbox]:checked + .indicator:before {
+  background: #FA9A96;
+}
+
+input[type=checkbox],
+input[type=radio],
+.actions input[type=checkbox],
+label.action input[type=checkbox] {
+  background: #333333;
+  border: 1px solid #060606;
+  vertical-align: -0.25em;
+}
+
+input[type=radio] {
+  vertical-align: -0.025em;
+}
+
+input[type="radio"] + label, 
+input[type="checkbox"] + label {
+  padding-left: 0;
+}
+
+input[type=checkbox],
+input[type=radio],
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked,
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked,
+.actions input[type=checkbox]:checked,
+label.action input[type=checkbox]:checked {
+  background: #97FABC;
+  border: none;
+}
+
+input[type=checkbox]:hover,
+.actions input[type=checkbox]:hover,
+.filters [type=checkbox]:hover + .indicator:before,
+.filters [type=radio]:hover + .indicator:before,
+.filters .exclude [type=checkbox]:hover + .indicator:before {
+  background: #cb96fa;
+  border: none;
+}
+
+/*== 留言區inbox ==*/
+div.comment,
+li.comment {
+  background: #060606;
+  border-radius: .25em;
+  border: 2px solid #060606;
+  margin-bottom: 1.25em;
+}
+
+.comment h4.byline {
+  padding-left: 115px;
+  font-size: 20px;
+}
+
+.comment .posted {
+  font-size: 14px;
+}
+
+.abbreviated .comment h4.byline {
+  padding-left: 90px;
+}
+
+.comment div.icon {
+  border: none;
+  margin-right: 1em;
+}
+
+.comment .icon {
+  border: 3px solid #97FABC;
+}
+
+
+/*未讀*/
+.unread.comment {
+  border: 2px dashed #97fabc;
+}
+
+.unread.comment .icon {
+  border-color: transparent;
+}
+
+span.offered, .replied, .nominations .approved {
+  color: #97fabc;
+  background: #161616;
+  border-color: transparent;
+}
+
+span.unread {
+  visibility: hidden;
+}
+
+/*偶數留言*/ .thread .even {
+  background: #1c1c1c;
+  border-radius: .25em;
+  border: 1px solid #1c1c1c;
+  margin-bottom: 1.25em;
+}
+
+/*== 儀錶板其他內容 ==*/
+/*數據statistics*/
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect,
+#stat_chart svg g:nth-of-type(2) > g rect:last-of-type,
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:first-of-type {
+  filter: hue-rotate(165deg);
+  opacity: 80% !important;
+}
+
+.statistics .index.group li:nth-of-type(even) {
+  background: #161616;
+}
+
+.statistics .index.group dt {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*觀看紀錄history*/
+.reading h4.viewed {
+  color: #000;
+  background: #CB96FA;
+  padding: .75em;
+}
+
+/*訂閱清單subscriptions*/
+dl.index dd {
+  background: none;
+}
+
+dl.subscription.index.group input {
+  white-space: break-spaces;
+  text-wrap: wrap;
+}
+
+dl.subscription.index.group dt a:first-child {
+  display: block;
+  margin: auto;
+  font-size: 20px;
+}
+
+dl.subscription.index.group dt {
+  float: left;
+  clear: both;
+}
+
+dl.subscription.index.group dd {
+  float: right;
+  clear: both;
+}
+
+/*關聯作品*/
+.related_works-index h3.heading {
+  margin: 1.5em auto .5em;
+}
+
+.related_works-index thead, 
+.related_works-index dt {
+  line-height: 1.5;
+}
+
+.related_works-index th:not(:first-child):not(:last-child), 
+.related_works-index td:not(:first-child):not(:last-child) {
+  border-inline: 1px solid #5d6b63;
+}
+
+.related_works-index dt a:first-child {
+  font-size: 20px;
+}
+
+/*== 表格table ==*/
+table {
+  background: #060606;
+  border-radius: .25em;
+  border: none;
+}
+
+th, 
+tr, 
+tr:hover, 
+col.name,
+tfoot,
+tbody tr {
+  background: none;
+  border: none;
+}
+
+thead {
+  background: #252525;
+  border: none;
+}
+
+/*== a 超連結 ==*/
+a,
+a:link,
+a:visited,
+.listbox .heading a:visited,
+.blurb .header h4.heading a:visited {
+  color: #97FABC;
+  border: none;
+}
+
+a:hover, 
+a:focus,
+a:link:hover,
+a:link:focus,
+a:visited:hover,
+a:visited:focus,
+.listbox .heading a:visited:hover,
+.listbox .heading a:visited:focus,
+.blurb .header h4.heading a:visited:hover,
+.blurb .header h4.heading a:visited:focus,
+.blurb h4 a:link:hover, 
+.blurb h4 a:link:focus, 
+.blurb h4 img:hover,
+.blurb h4 img:focus,
+.bookmark .count a:hover, 
+.bookmark .count a:focus,
+.heading .action.top a:hover, 
+.heading .action.top a:focus {
+  COLOR: #000;
+  background: linear-gradient(-45deg, #96F6FA, #96Fa99);
+  text-decoration: none;
+}
+
+/*== 按鈕樣式 ==*/
+.actions a,
+.actions a:link,
+.actions a:visited, 
+.action,
+.action:link,
+.actions input,
+input[type=submit],
+button,
+.current,
+.actions label
+.actions li a,
+.actions li input,
+.actions li input[type=submit],
+.actions li label,
+.action:visited, 
+.action a:link, 
+.action a:visited {
+  COLOR: #fff;
+  background: #2B322E;
+  border: 1px solid #2B322E;
+  background-image: none;
+  box-shadow: none;
+  white-space: nowrap;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+label.action:focus,
+.action:hover,
+.action:focus,
+input[type=submit]:hover,
+input[type=submit]:focus,
+.actions li input:hover,
+.actions li input:focus,
+.actions li input[type=submit]:hover,
+.actions li input[type=submit]:focus,
+button:hover,
+button:focus,
+#modal .footer .action.modal-closer:hover {
+  color: #97FABC;
+  background: #161616;
+  border: 1px solid #97FABC;
+  background-image: none;
+  box-shadow: none;
+}
+
+.actions li .current {
+  font-weight: bold;
+  color: #000;
+  background: #97FABC;
+  border: 1px solid #97FABC;
+}
+
+/*== 作品內文頁 ==*/
+.work.meta.group dt {
+  font-size: 0;
+}
+.work.meta.group dd {
+  width: auto;
+}
+.meta .stats dl, 
+.meta .stats dl dt:first-child, 
+dl.meta dd ul li:first-child {
+    padding-left: 0.25em;
+}
+.work.meta.group dd.language,
+.work.meta.group dd.collections,
+.work.meta.group dd.series {
+    padding-left: 0.5em;
+}
+
+.preface h3 {
+  border-color: #2B322E;
+}
+
+.preface.group {
+  margin: 1.5em 2em;
+}
+
+#workskin {
+  max-width: 45em;
+  margin: auto;
+}
+
+#workskin [role="article"] {
+  margin: 3.5em auto;
+}
+
+#chapters .preface.group {
+  border-radius: .25em;
+  border-color: #2B322E;
+  clear: both;
+}
+
+.thread ul.actions {
+    padding: 0;
+}
+
+.draft {
+    border-color: #5d6b63;
+}
+
+/*調整標題佈局與顏色*/
+.userstuff h2 {
+  color: #fff;
+  margin: 1em auto;
+}
+.userstuff h3 {
+  font-weight: 600;
+  border-color: #2b322e;
+}
+.userstuff h6 {
+  border-color: #97fabc;
+}
+
+/*加入書籤bookmarks輸入框*/
+.toggled form, 
+.dynamic form, 
+.bookmark .dynamic {
+  color: #fff;
+  background: #060606;
+  box-shadow: none;
+  border: none;
+  border-radius: .25em;
+}
+
+.toggled form p.footnote, 
+.dynamic form p.footnote, 
+.toggled .bookmark form p.footnote {
+  padding: 1em;
+  line-height: 1.25;
+}
+
+/*== 頭像icon ==*/
+.icon {
+  border-radius: .25em;
+}
+
+/*== 隱藏起來的東西 == /beta文字、logo圖案、user頭像、首頁訊息提示、推特限高、作品數據前綴、標籤tags逗號、書籤前綴*/
+#header .heading sup, 
+#header .logo, 
+#greeting .icon {
+  display: none;
+}
+
+.latest.messages .note, 
+.random.readings .note { 
+  display: none; 
+}
+
+.latest.tweets iframe {
+  max-height: 85px;
+}
+
+.sorting.actions h4.heading {
+  display: none;
+}
+
+dl.stats dt {
+  display: none;
+}
+
+.commas li:after {
+  content: "";
+}
+
+.mods.commas li:after {
+  content: ", ";
+}
+
+.mods.commas li:last-child:after,
+.mods.commas li:only-child:after {
+  content: none;
+}
+
+.blurb .header h5.fandoms.heading, 
+.bookmark h5.byline.heading, 
+.bookmark h6.meta.heading {
+  font-size: 0; 
+  margin-top: 6px; 
+  margin-bottom: 6px; 
+}
+
+
+/*== 添加小圖示 ==*/
+a.dropdown-toggle[href*="/works/new"] {
+  background: url(https://i.ibb.co/LJmV776/image.png) no-repeat !important;
+  background-size: 15px !important;
+  text-indent: -9999px;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0 !important;
+  border: 5px solid transparent !important;
+}
+
+a[href*="/users/logout"] {
+  background: url(https://i.ibb.co/mBg7Xwc/image.png) no-repeat !important;
+  background-size: 15px !important;
+  text-indent: -9999px;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 0px !important;
+  border: 5px solid transparent !important;
+}
+
+#greeting .user.actions li:hover, 
+#greeting .user.actions li:focus {
+  background: #060606;
+  border-color: #060606;
+  border-radius: .25em;
+}
+
+.work.meta.group dd.language::before,
+dl.stats dd.words::before, 
+dl.stats dd.chapters::before,
+dd.collections::before,
+dl.stats dd.comments::before,
+dl.stats dd.kudos::before, 
+dl.stats dd.bookmarks::before, 
+dl.stats dd.hits::before, 
+dd.series::before, 
+dl.stats dd.published::before, 
+dl.stats dd.status::before,
+dl.stats dd.subscriptions::before, 
+.series dl.stats dd::before, 
+.bookmark dl.stats dd::before,
+li.collection dl.stats a[href*="/collections"]::before,
+.tagset dl.stats dd::before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-size: 15px !important;
+  margin: 0px 3px -2px 0;
+}
+
+ .work.meta.group dd.language::before { background: url(https://i.ibb.co/zV6LTNF/image.png); }
+dl.stats dd.words::before, .series dl.stats dd:first-of-type:not([class])::before, .bookmark dl.stats dd:first-of-type:not([class])::before { background: url(https://i.ibb.co/HCv1bSG/image.png); }
+dl.stats dd.chapters::before, .bookmark dl.stats dd:nth-of-type(2):not([class])::before { background: url(https://i.ibb.co/7Cychr9/image.png); }
+dd.collections::before, li.collection dl.stats a[href*="/collections"]::before { background: url(https://i.ibb.co/3dx21sP/image.png); }
+dl.stats dd.comments::before { background: url(https://i.ibb.co/wNLh0GX/image.png); }
+dl.stats dd.kudos::before { background: url(https://i.ibb.co/SxrGN9t/image.png); }
+dl.stats dd.bookmarks::before, .series dl.stats dd:nth-of-type(4):not([class])::before, .bookmark dl.stats dd:nth-of-type(3):not([class])::before, li.collection dl.stats a[href*="/bookmarks"]::before { background: url(https://i.ibb.co/x8q45z7/image.png); }
+dl.stats dd.hits::before { background: url(https://i.ibb.co/VV8myx8/image.png); }
+dd.series::before, .series dl.stats dd:nth-of-type(2):not([class])::before, li.collection dl.stats a[href*="/works"]::before { background: url(https://i.ibb.co/pnhSFRC/image.png); }
+dl.stats dd.published::before { background: url(https://i.ibb.co/5smgps0/image.png); }
+dl.stats dd.status::before, .series dl.stats dd:nth-of-type(3):not([class])::before { background: url(https://i.ibb.co/NCMzpdf/image.png); }
+dl.stats dd.subscriptions::before { background: url(https://i.ibb.co/5sxHwvm/image.png); }
+li.collection dl.stats a[href*="/fandoms"]::before, .tagset dl.stats dd:first-of-type::before { background: url(https://i.ibb.co/py1xqKp/image.png); }
+li.collection dl.stats a[href*="/requests"]::before { background: url(https://i.ibb.co/KqKcLVJ/image.png); } 
+.tagset dl.stats dd:nth-of-type(2)::before { background: url(https://i.ibb.co/Hxkkmh1/image.png); }
+.tagset dl.stats dd:nth-of-type(3)::before { background: url(https://i.ibb.co/mtjwTnh/image.png); }
+.tagset dl.stats dd:last-of-type::before { background: url(https://i.ibb.co/6HyYXXy/image.png); }
+
+/*== 標籤個人化 ==*/
+a.tag,
+a.tag:link,
+a.tag:visited,
+.listbox .heading a.tag:visited {
+  font-size: 15px;
+  color: #97FABC;
+  background: #1c1c1c;
+  line-height: 1.1;
+  padding: 3px 6px;
+  margin: 3px 0;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+a.tag:hover,
+a.tag:focus,
+a.tag:link:hover,
+a.tag:link:focus,
+a.tag:visited:hover,
+a.tag:visited:focus,
+.listbox .heading a.tag:visited:hover,
+.listbox .heading a.tag:visited:focus {
+  COLOR: #000 !important;
+  background: linear-gradient(-45deg, #96F6FA, #96Fa99) !important;
+}
+
+/*主綠#97FABC 橘#FAD396 紫#CB96FA 紅#FA9A96 
+#BCFA96、#96F6FA、#96FA99*/
+li.relationships a.tag,
+dd.relationship a.tag {
+  color: #FAD396;
+}
+
+li.characters a.tag,
+dd.character a.tag {
+  color: #ECFEF1;
+}
+
+li.freeforms a.tag,
+dd.freeform a.tag {
+  color: #CB96FA;
+}
+
+.commas .tag:is([href*="Top" i][href*="Zoro" i]) {
+  color: #FA9A96;
+  background: linear-gradient(45deg, #43241F, #182C35);
+}
+
+.commas .tag:is([href*="bottom" i][href*="zoro" i]),
+.commas .tag[href*="%E7%B4%A2%E5%8F%97"] {
+  color: #bcfa96;
+  background: linear-gradient(90deg, #182C35, #8E975E);
+}
+
+/*== 其他other small changes ==*/
+/*問號跳出說明*/
+#modal {
+  background: #161616;
+  color: #fff;
+  border: #161616;
+}
+
+/*問號*/
+span.question {
+  background: #97FABC;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  vertical-align: 0;
+}
+span.symbol span {
+  padding: .25em .425em;
+}
+
+/*預設序列顏色*/
+li::marker {
+  color: #97fabc;
+}
+ul.notes li::marker,
+.error li::marker {
+  color: #000;
+}
+
+/*預設引用顏色*/
+.userstuff blockquote {
+  border-inline-start: 2px solid #97FABC;
+}
+q::before, q::after {
+  color: #97fabc;
+}
+
+/*預設分隔線*/
+.userstuff hr {
+  margin: .875em auto 1.75em;
+}
+
+/*反白文字*/
+::selection {
+  background: #BCFA96;
+  COLOR: #000;
+}
+
+/*滾動條滑軌*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #333333;
+}
+/*滾動條樣式*/
+::-webkit-scrollbar-thumb{
+  background: #BCFA96;
+  border-radius: 8px;
+}
+
+/*章節與下載選單*/
+.chapter .secondary, .download .secondary {
+  top: initial;
+  right: 0;
+  margin: 2.5em;
+  background: #060606;
+  border: 1px solid #5d6b63;
+  border-radius: .25em;
+  box-shadow: none;
+}
+.chapter .secondary form p {
+  padding: 0;
+}
+
+/*坑頁的回上箭頭*/
+.heading .action.top,
+.heading .action.top a {
+  background: #5d6b63;
+  border: none;
+}
+
+/*搜尋search、tag sets*/
+li.search fieldset {
+  background: none;
+  border: none;
+  font-size: inherit;
+}
+input#query {
+    color: #fff;
+    border-color: #2b322e;
+}
+form.search input[type="text"] {
+    color: #fff;
+    border-color: #1c1c1c;
+}
+input#query:hover {
+    color: #97fabc;
+    border-color: #97fabc;
+}
+
+/*tag sets*/
+.tagset.home .index.group span.action a[role="button"]{
+  background: none;
+  border: none;
+}
+.tagset.home .index.group span.action a[role="button"]:hover {
+  color: #97fabc;
+}
+
+.tagset.home .index.group h3.heading {
+  display: inline-block;
+  line-height: 1.5;
+  width: auto;
+}
+
+.tagset.home .index.group .tags.group h3.heading {
+  background: #060606;
+}
+
+.tagset.home .index.group .tags.group li {
+  line-height: 1.5;
+  padding: 3px 6px;
+  margin: 3px 0;
+  border: none;
+  border-radius: .25em;
+}
+
+.tagset.home .index.group .tags.group .listbox.group li {
+  display: inline-block;
+  color: #97FABC;
+  background: #1c1c1c;
+}
+
+/*標籤雲*/
+a.cloud1.tag {
+  color: #96F6FA;
+  background: none;
+  font-size: 0.625em;
+}
+a.cloud2.tag {
+  color: #FAD396;
+  background: none;
+  font-size: 0.75em;
+}
+a.cloud3.tag {
+  color: #FA9A96;
+  background: none;
+  font-size: 1.225em;
+}
+a.cloud4.tag {
+  color: #CB96FA;
+  background: none;
+  font-size: 1.5em;
+}
+a.cloud5.tag {
+  color: #96FA99;
+  background: none;
+  font-size: 1.75em;
+}
+a.cloud6.tag {
+  color: #FAD396;
+  background: none;
+  font-size: 1.875em;
+}
+a.cloud7.tag {
+  color: #FA9A96;
+  background: none;
+  font-size: 2em;
+}
+a.cloud8.tag {
+  color: #CB96FA;
+  background: none;
+  font-size: 2.5em;
+}
+
+/*rss按鈕圖案調整置中*/
+a.rss span {
+  line-height: 14.45px;
+  display: inline-block;
+}
+
+.news dl.meta {
+  padding: 1em;
+}
+
+/*== 個人化 ==*/
+/*
+dl.stats,
+dd.language,
+.datetime,
+.splash .news .meta {
+  font-family: "Iansui", "LXGW WenKai TC";
+}
+*/
+
+
+/*如果需要留下點擊過連結的紀錄，保留這個部分(把斜線米字刪除)*/
+/*
+.listbox .heading a:visited,
+.blurb .header h4.heading a:visited {
+  color: #FA9A96;
+  border: none;
+}
+*/
