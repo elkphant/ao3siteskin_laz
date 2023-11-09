@@ -1,41 +1,9 @@
+/*改為主色的LOGO圖示，不過LOGO區塊刪掉了所以看不出來，只是為了個人方便放在這裡*/
 #main.session {
   background: url("https://i.ibb.co/HzKgJjG/Ao3logo.png") 0.5em 3em no-repeat;
 }
 
-.abbreviated .icon .anonymous {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -450px;
-}
-
-.abbreviated .icon .visitor {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -375px;
-}
-
-.skins .primary .icon {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -175px;
-}
-
-.admin .primary .icon {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 100px -75px;
-}
-
-.tag .primary .icon,
-.tagset .primary .icon {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -275px;
-}
-
-
-p.kudos {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -110px -580px;
-  padding: 0.5em 0.5em 0.5em 60px;
-  margin: 2em 0;
-  min-height: 50px;
-}
-
-a.rss span {
-  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -150px -275px;
-  padding-left: 16px;
-}
-
+/*出現在瀏覽作品頁左右上角的小圖*/
 .required-tags .rating-general-audience {
   background: url("https://i.ibb.co/4pGLzK1/imageset.png") -50px -25px;
 }
@@ -117,6 +85,43 @@ a.rss span {
 
 .status .rec {
   background: url("https://i.ibb.co/4pGLzK1/imageset.png") -100px -50px;
+}
+
+
+/*心心的底圖*/
+p.kudos {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -110px -580px;
+  padding: 0.5em 0.5em 0.5em 60px;
+  margin: 2em 0;
+  min-height: 50px;
+}
+
+/*RSS的小圖示*/
+a.rss span {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat -150px -275px;
+  padding-left: 16px;
+}
+
+/*以下有CP腦做的預設頭像，不需要刪掉就可以了*/
+.abbreviated .icon .anonymous {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -450px;
+}
+
+.abbreviated .icon .visitor {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -375px;
+}
+
+.skins .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -175px;
+}
+
+.admin .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 100px -75px;
+}
+
+.tag .primary .icon,
+.tagset .primary .icon {
+  background: url("https://i.ibb.co/4pGLzK1/imageset.png") 0px -275px;
 }
 
 .index .skins .icon {
