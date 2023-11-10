@@ -765,6 +765,10 @@ label.action input[type=checkbox] {
   vertical-align: -0.025em;
 }
 
+label.action input[type=checkbox] {
+  vertical-align: -0.25em;
+}
+
 input[type=radio] {
   border-radius: 50%;
 }
