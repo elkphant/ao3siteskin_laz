@@ -1138,7 +1138,8 @@ dl.meta dd ul li:first-child {
 }
 
 .preface.group {
-  margin: 1.5em 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #workskin {
@@ -1147,7 +1148,7 @@ dl.meta dd ul li:first-child {
 }
 
 #workskin [role="article"] {
-  margin: 3.5em auto;
+  margin: 3em auto 5em;
 }
 
 #chapters .preface.group {
