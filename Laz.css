@@ -873,7 +873,7 @@ span.unread {
 }
 
 /*== 儀錶板其他內容 ==*/
-/*數據statistics*/
+/*數據頁面statistics*/
 #stat_chart g[clip-path^=url] > g:nth-of-type(2) rect,
 #stat_chart svg g:nth-of-type(2) > g rect:last-of-type,
 #stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:first-of-type {
@@ -923,7 +923,7 @@ dl.subscription.index.group dd {
   clear: both;
 }
 
-/*關聯作品*/
+/*關聯作品related works*/
 .related_works-index h3.heading {
   margin: 1.5em auto .5em;
 }
@@ -1050,7 +1050,9 @@ dd.freeform a.tag {
   color: #CB96FA;
 }
 
-/*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤*/
+/*這裡是紅綠燈設置，用來凸顯喜歡的或者不喜歡的標籤
+使用方式是修改引號內的文字，中文或符號需要修改成ASCII編碼
+可以右鍵點擊複製標籤連結，留下編碼內容*/
 /*紅燈*/
 .commas .tag:is([href*="Top" i][href*="XXXXXX" i]) {
   color: #FA9A96;
@@ -1183,7 +1185,7 @@ dl.meta dd ul li:first-child {
   border-color: #97fabc;
 }
 
-/*加入書籤bookmarks輸入框*/
+/*加入書籤bookmarks的輸入框*/
 .toggled form, 
 .dynamic form, 
 .bookmark .dynamic {
@@ -1208,8 +1210,8 @@ dl.meta dd ul li:first-child {
 
 /*== 隱藏起來的東西hidden stuffs ==/beta文字、logo圖案、user頭像、首頁訊息提示、推特限高、作品數據前綴、標籤tags逗號、書籤前綴*/
 
-/*個人化，防止掃文看見自己的或已書籤的作品
-第一行是作品，第二行是書籤*/
+/*個人化，防止掃文看見自己的或已書籤的作品，第一行是作品，第二行是書籤。
+不要使用刪除這一段即可*/
 #main:not([class*="dashboard"], [class*="series"], [class*="bookmarks"]) .index.group .blurb.group:is([class*="own"]), 
 #main:not([class*="dashboard"]) .index.group .blurb.group:has([class*="own"]) {
   display: none;
