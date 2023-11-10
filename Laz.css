@@ -60,7 +60,7 @@ span.symbol,
 select, #stat_chart svg text,
 dl.stats,
 dd.language {
-  font-family: Sarabun, Leelawadee UI, "Iansui", "LXGW WenKai TC", "Noto Sans TC", "Noto Sans CJK TC", 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+  font-family: Sarabun, Leelawadee UI, 'Lucida Sans Unicode', Verdana, "Iansui", "LXGW WenKai TC", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
 }
 
 kbd,
