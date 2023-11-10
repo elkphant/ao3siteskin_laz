@@ -253,8 +253,7 @@ dl.meta dt {
 
 dl.meta dd .userstuff, 
 dl.meta dd .stats,
-dl.meta dd  p,
-dl.meta dd .mods {
+dl.meta dd  p {
   clear: both;
   padding: .25em 0;
 }
