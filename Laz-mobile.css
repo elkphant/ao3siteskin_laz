@@ -223,7 +223,7 @@ samp,
 
 /*超出高度改為滾動條*/
 li.blurb .fandoms {
-  max-height: 150px;
+  max-height: 150px; /*這裡單位不能是em*/
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -240,7 +240,7 @@ li.blurb .fandoms::-webkit-scrollbar {
   height: 3px;
 }
 
-/*== 作品內文頁 ==*/
+/*== 作品內文頁work page ==*/
 .preface.group {
   margin-left: 1em;
   margin-right: 1em;
@@ -264,7 +264,7 @@ dl.meta dd  p {
   margin-bottom: .5em;
 }
 
-/*== 編輯頁 ==*/
+/*== 編輯頁edit page ==*/
 form dl {
   margin: 0;
 }
@@ -282,12 +282,12 @@ p.kudos::before {
   content: "🖤💚";
 }
 
-/*數據清單statistics*/
+/*數據清單statistics lists*/
 .fandom.listbox .index.group dl {
   margin: .75em auto;
 }
 
-/*訂閱清單subscriptions*/
+/*訂閱清單subscriptions lists*/
 dl.subscription.index.group {
   width: 90%;
   margin: 1em auto;
@@ -313,7 +313,8 @@ dl.subscription.index.group input {
   left: 2px;
 }
 
-/*訪客頭像，有套用imageset才需要(把斜線米字米字斜線刪除)*/
+/*訪客頭像，有套用imageset才需要(把斜線米字米字斜線刪除)
+only need if use the imageset*/
 /*
 .comment .icon .visitor {
   background: url("https://i.ibb.co/4pGLzK1/imageset.png") no-repeat 0px -525px transparent;
