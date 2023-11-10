@@ -1449,7 +1449,7 @@ q::before, q::after {
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background: #333333;
+  background: #252525;
 }
 
 /*滾動條樣式*/
