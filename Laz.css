@@ -1206,8 +1206,8 @@ dl.meta dd ul li:first-child {
 
 /*個人化，防止掃文看見自己的或已書籤的作品
 第一行是作品，第二行是書籤*/
-#main:not([class*="dashboard"],[class*="series"],[class*="bookmarks"]) .index.group li:is([class*="own"]),
-#main:not([class*="dashboard"]) .index.group li:has([class*="own"]) {
+#main:not([class*="dashboard"], [class*="series"], [class*="bookmarks"]) .index.group .blurb.group:is([class*="own"]), 
+#main:not([class*="dashboard"]) .index.group .blurb.group:has([class*="own"]) {
   display: none;
 }
 
