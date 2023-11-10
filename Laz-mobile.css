@@ -242,7 +242,8 @@ li.blurb .fandoms::-webkit-scrollbar {
 
 /*== 作品內文頁 ==*/
 .preface.group {
-  margin: 1.5em 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 
