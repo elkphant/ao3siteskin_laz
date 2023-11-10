@@ -302,6 +302,7 @@ dl.subscription.index.group input {
 /*留言*/
 .comment h4.byline,
 .abbreviated .comment h4.byline {
+  min-height: 2em;
   padding-left: 65px;
 }
 
