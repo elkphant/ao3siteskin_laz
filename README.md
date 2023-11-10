@@ -12,3 +12,5 @@
 
 4. 標籤個人化是熱心使用者在Tumblr分享的代碼：https://www.tumblr.com/ao3css/719426121300590593/ao3-tag-highlighting-skin  
 Imageset是同個Tumblr分享的大圖修改而成：https://www.tumblr.com/ao3css/721378958391771136/hd-ao3-icon-skin  
+
+5. 其他個人化：隱藏作品內文頁列表標題、隱藏書籤前綴、掃文頁面隱藏自己作品與書籤、訂閱清單頁面、關聯作品頁面、imageset製作、隱藏未讀標示……
