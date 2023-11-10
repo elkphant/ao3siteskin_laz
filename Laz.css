@@ -575,7 +575,7 @@ form.filters dl {
 
 .blurb dl.stats dd.chapters a:hover,
 .blurb dl.stats dd.chapters a:focus {
-  background: #97FABC;
+  background: linear-gradient(45deg, #96F6FA, #BCFA96);
 }
 
 .blurb dl.stats {
