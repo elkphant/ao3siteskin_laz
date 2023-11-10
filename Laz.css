@@ -1203,6 +1203,14 @@ dl.meta dd ul li:first-child {
 }
 
 /*== 隱藏起來的東西 ==/beta文字、logo圖案、user頭像、首頁訊息提示、推特限高、作品數據前綴、標籤tags逗號、書籤前綴*/
+
+/*個人化，防止掃文看見自己的或已書籤的作品
+第一行是作品，第二行是書籤*/
+#main:not([class*="dashboard"],[class*="series"],[class*="bookmarks"]) .index.group li:is([class*="own"]),
+#main:not([class*="dashboard"]) .index.group li:has([class*="own"]) {
+  display: none;
+}
+
 #header .heading sup, 
 #header .logo, 
 #greeting .icon {
@@ -1214,7 +1222,8 @@ dl.meta dd ul li:first-child {
   display: none; 
 }
 
-/*自從推特被奇怪的人改來改去之後都顯示不出東西，但又不想刪除這個欄位所以只有限制高度，如果不想顯示可以display: none刪掉*/
+/*自從推特被奇怪的人改來改去之後都顯示不出東西，但又不想刪除這個欄位所以只有限制高度
+如果想刪除欄位可改成 .latest.tweets { display: none; } */
 .latest.tweets iframe {
   max-height: 85px;
 }
