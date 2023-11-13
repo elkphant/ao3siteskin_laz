@@ -614,8 +614,7 @@ dl.stats+.landmark+.actions, .mystery .summary+.landmark+.actions {
   margin-right: .25em;
 }
 
-.bookmark .user .datetime, 
-.bookmark .work .datetime {
+.bookmark .user .datetime {
   max-width: 110px;
 }
 
