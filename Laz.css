@@ -1296,107 +1296,122 @@ a[href*="/users/logout"] {
   border-radius: .25em;
 }
 
-.work.meta.group dd.language::before,
-dl.stats dd.words::before, 
+.work.meta dd.language::before,
+dl.stats dd.words::before,
 dl.stats dd.chapters::before,
-dd.collections::before,
+dl.stats dd.collections::before,
+.work.meta dd.collections::before,
 dl.stats dd.comments::before,
-dl.stats dd.kudos::before, 
-dl.stats dd.bookmarks::before, 
-dl.stats dd.hits::before, 
-dd.series::before, 
-dl.stats dd.published::before, 
+dl.stats dd.kudos::before,
+dl.stats dd.bookmarks::before,
+dl.stats dd.hits::before,
+dl.stats dd.series::before,
+.work.meta dd.series::before,
+dl.stats dd.published::before,
 dl.stats dd.status::before,
-dl.stats dd.subscriptions::before, 
-.series dl.stats dd::before, 
-.bookmark dl.stats dd::before,
-li.collection dl.stats a[href*="/collections"]::before,
+dl.stats dd.subscriptions::before,
+.bookmark .user.module.group h5.byline.heading::before,
+.bookmark .meta.commas::before,
+.series.meta dl.stats dd::before,
+li[class*="series-"] dl.stats dd::before,
+li[class*="external-work"] dl.stats dd::before,
+li.collection dl.stats dd::before,
 .tagset dl.stats dd::before {
-  display: inline-block;
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-size: 15px !important;
-  margin: 0px 3px -2px 0;
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-size: 15px !important;
+	margin: 0px 3px -2px 0;
 }
 
- .work.meta.group dd.language::before {
-   background: url(https://i.ibb.co/zV6LTNF/image.png);
- }
-
-dl.stats dd.words::before, 
-.series dl.stats dd:first-of-type:not([class])::before, 
-.bookmark dl.stats dd:first-of-type:not([class])::before {
-  background: url(https://i.ibb.co/HCv1bSG/image.png);
+.work.meta dd.language::before {
+	background: url(https://i.ibb.co/R9kL5F0/lang.png);
 }
 
-dl.stats dd.chapters::before, 
-.bookmark dl.stats dd:nth-of-type(2):not([class])::before {
-  background: url(https://i.ibb.co/7Cychr9/image.png);
+dl.stats dd.words::before,
+.series.meta dl.stats dd:first-of-type:not([class])::before,
+li[class*="series-"] dl.stats dd:first-of-type:not([class])::before {
+	background: url(https://i.ibb.co/HCv1bSG/image.png);
 }
 
-dd.collections::before,
-li.collection dl.stats a[href*="/collections"]::before {
-  background: url(https://i.ibb.co/3dx21sP/image.png);
+dl.stats dd.chapters::before,
+.series.meta dl.stats dd:nth-of-type(2):not([class])::before,
+li[class*="series-"] dl.stats dd:nth-of-type(2):not([class])::before {
+	background: url(https://i.ibb.co/XtLW1Gr/page.png);
+}
+
+dl.stats dd.collections::before,
+.work.meta dd.collections::before,
+li.collection dl.stats dd:has(a[href*="/collections"])::before,
+.bookmark .meta.commas::before {
+	background: url(https://i.ibb.co/3dx21sP/image.png);
 }
 
 dl.stats dd.comments::before {
-  background: url(https://i.ibb.co/wNLh0GX/image.png);
+	background: url(https://i.ibb.co/wNLh0GX/image.png);
 }
 
 dl.stats dd.kudos::before {
-  background: url(https://i.ibb.co/SxrGN9t/image.png);
+	background: url(https://i.ibb.co/bWp7KC4/kudo.png);
 }
 
-dl.stats dd.bookmarks::before, 
-.series dl.stats dd:nth-of-type(4):not([class])::before, 
-.bookmark dl.stats dd:nth-of-type(3):not([class])::before, 
-li.collection dl.stats a[href*="/bookmarks"]::before {
-  background: url(https://i.ibb.co/x8q45z7/image.png);
+dl.stats dd.bookmarks::before,
+.series.meta dl.stats dd:nth-of-type(4):not([class])::before,
+li[class*="series-"] dl.stats dd:nth-of-type(3):not([class])::before,
+li[class*="external-work"] dl.stats dd:has(a:is([href*="/external_works"][href*="/bookmarks"]))::before,
+li.collection dl.stats dd:has(a[href*="/bookmarks"])::before {
+	background: url(https://i.ibb.co/x8q45z7/image.png);
 }
 
 dl.stats dd.hits::before {
-  background: url(https://i.ibb.co/VV8myx8/image.png);
+	background: url(https://i.ibb.co/VV8myx8/image.png);
 }
 
-dd.series::before,
-.series dl.stats dd:nth-of-type(2):not([class])::before,
-li.collection dl.stats a[href*="/works"]::before {
-  background: url(https://i.ibb.co/pnhSFRC/image.png);
+dl.stats dd.series::before,
+.work.meta dd.series::before,
+li[class*="external-work"] dl.stats dd:has(a[href*="/external_works"])::before,
+li.collection dl.stats dd:has(a[href*="/works"])::before {
+	background: url(https://i.ibb.co/JdmPgcB/work.png);
 }
 
 dl.stats dd.published::before {
-  background: url(https://i.ibb.co/5smgps0/image.png);
+	background: url(https://i.ibb.co/5smgps0/image.png);
 }
 
-dl.stats dd.status::before, 
-.series dl.stats dd:nth-of-type(3):not([class])::before {
-  background: url(https://i.ibb.co/NCMzpdf/image.png);
+dl.stats dd.status::before,
+.series.meta dl.stats dd:nth-of-type(3):not([class])::before {
+	background: url(https://i.ibb.co/NCMzpdf/image.png);
 }
 
 dl.stats dd.subscriptions::before {
-  background: url(https://i.ibb.co/5sxHwvm/image.png);
+	background: url(https://i.ibb.co/5sxHwvm/image.png);
 }
 
-li.collection dl.stats a[href*="/fandoms"]::before, 
-.tagset dl.stats dd:first-of-type::before { 
-  background: url(https://i.ibb.co/py1xqKp/image.png); 
+li.collection dl.stats dd:has(a[href*="/fandoms"])::before,
+.tagset dl.stats dd:first-of-type::before {
+	background: url(https://i.ibb.co/py1xqKp/image.png);
 }
 
-li.collection dl.stats a[href*="/requests"]::before {
-  background: url(https://i.ibb.co/KqKcLVJ/image.png);
+li.collection dl.stats dd:has(a[href*="/requests"])::before {
+	background: url(https://i.ibb.co/KqKcLVJ/image.png);
 }
 
-.tagset dl.stats dd:nth-of-type(2)::before { 
-  background: url(https://i.ibb.co/Hxkkmh1/image.png);
+.tagset dl.stats dd:nth-of-type(2)::before {
+	background: url(https://i.ibb.co/Hxkkmh1/image.png);
 }
 
-.tagset dl.stats dd:nth-of-type(3)::before { 
-  background: url(https://i.ibb.co/mtjwTnh/image.png);
+.tagset dl.stats dd:nth-of-type(3)::before {
+	background: url(https://i.ibb.co/mtjwTnh/image.png);
 }
 
-.tagset dl.stats dd:last-of-type::before {
-  background: url(https://i.ibb.co/6HyYXXy/image.png); 
+.tagset dl.stats dd:last-of-type::before,
+.bookmark .meta.tags.commas::before {
+	background: url(https://i.ibb.co/6HyYXXy/image.png);
+}
+
+.bookmark h5.byline.heading::before {
+	background: url(https://i.ibb.co/qxw8601/pin.png);
 }
 
 /*== 其他微小的更動 other small changes ==*/
